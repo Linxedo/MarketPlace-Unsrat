@@ -1,29 +1,84 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ===================================================
+   style.css — Custom overrides untuk Bootstrap 5
+   Hanya berisi style yang tidak tersedia di Bootstrap
+   =================================================== */
 
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
-    line-height: 1.6;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-/* Header */
-header {
-    background-color: #2c3e50;
+/* ===== TOP BAR ===== */
+.top-bar {
+    background-color: #1e39c2;
     color: white;
-    padding: 40px 20px;
-    text-align: center;
-    border-bottom: 1px solid #ddd;
 }
 
-header h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-    font-weight: 500;
+.icon-btn {
+    color: rgba(255, 255, 255, 0.85);
+    border: none;
+    background: transparent;
+    transition: color 0.2s, background 0.2s;
+}
+
+.icon-btn:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+.profile-info {
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex !important;
+}
+
+.profile-info:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.profile-info:hover .profile-name {
+    color: white;
+}
+
+.logo-brand {
+    cursor: pointer;
+    transition: opacity 0.2s;
+    color: white;
+}
+
+.logo-brand:hover {
+    opacity: 0.85;
+    color: white;
+}
+
+.logo-image {
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.logo-text {
+    font-size: 13px;
+    color: white;
+    letter-spacing: 0.3px;
+}
+
+.profile-avatar {
+    width: 34px;
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+.profile-name {
+    font-size: 13px;
+    color: white;
+    letter-spacing: 0.3px;
+}
+
+/* ===== HEADER ===== */
+.site-header {
+    background-color: #2c3e50;
 }
 
 .tagline {
@@ -31,55 +86,43 @@ header h1 {
     color: #bdc3c7;
 }
 
-/* Produk Section */
-.produk-section {
-    padding: 50px 20px;
-}
-
-.produk-section-wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: white;
-    padding: 40px;
-    border-radius: 4px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-
-.produk-section h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 24px;
-    color: #2c3e50;
+/* ===== NAVBAR ===== */
+.nav-custom {
+    font-size: 14px;
     font-weight: 500;
-}
-
-.produk-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
-.produk-card {
-    background-color: white;
-    border: 1px solid #e0e0e0;
-    overflow: hidden;
+    color: #555 !important;
+    border-bottom: 3px solid transparent;
+    padding: 14px 16px;
     transition: all 0.2s ease;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.nav-custom:hover {
+    color: #2c3e50 !important;
+    background-color: #f8f9fa;
+    border-bottom-color: #3498db;
+}
+
+.nav-custom.active {
+    color: #2c3e50 !important;
+    font-weight: 600;
+    border-bottom-color: #c0392b;
+}
+
+/* ===== PRODUK CARD ===== */
+.produk-card {
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 4px !important;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .produk-card:hover {
-    border: 1px solid #3498db;
-    box-shadow: 0 4px 12px rgba(52,152,219,0.15);
+    border-color: #3498db !important;
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.2) !important;
 }
 
 .produk-image {
-    width: 100%;
     height: 200px;
     background-color: #ecf0f1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
 }
 
 .produk-image img {
@@ -88,90 +131,23 @@ header h1 {
     object-fit: cover;
 }
 
-.produk-info {
-    padding: 15px;
-}
-
-.produk-info h3 {
-    font-size: 16px;
-    margin-bottom: 8px;
-    color: #2c3e50;
-    min-height: 40px;
-    font-weight: 500;
-}
-
-.seller {
-    font-size: 13px;
-    color: #7f8c8d;
-    margin-bottom: 5px;
-}
-
 .harga {
-    font-size: 19px;
+    font-size: 18px;
     color: #27ae60;
-    font-weight: 600;
-    margin-bottom: 8px;
 }
 
-.deskripsi {
-    font-size: 13px;
-    color: #555;
-    margin-bottom: 12px;
-    min-height: 40px;
-}
-
-.btn-lihat {
-    display: block;
-    text-align: center;
+/* ===== TOMBOL DETAIL ===== */
+.btn-detail {
     background-color: #3498db;
     color: white;
-    padding: 11px;
-    text-decoration: none;
-    transition: background-color 0.2s ease;
+    border: none;
+    border-radius: 3px;
     font-weight: 500;
+    padding: 10px;
+    transition: background-color 0.2s ease;
 }
 
-.btn-lihat:hover {
+.btn-detail:hover {
     background-color: #2980b9;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 24px;
-    }
-
-    .produk-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-
-    .produk-section-wrapper {
-        padding: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 20px;
-    }
-
-    .tagline {
-        font-size: 13px;
-    }
-
-    .produk-section {
-        padding: 20px 10px;
-    }
-
-    .produk-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .produk-section-wrapper {
-        padding: 15px;
-    }
-
-    .produk-section h2 {
-        font-size: 20px;
-    }
+    color: white;
 }
