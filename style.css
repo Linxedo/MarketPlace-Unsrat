@@ -178,3 +178,116 @@ body {
     background-color: #2980b9;
     color: white;
 }
+
+/* ===== LOGIN CARD ===== */
+.login-card {
+    border-radius: 12px !important;
+    background: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.login-card:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-2px);
+}
+
+.login-card .card-body {
+    padding: 40px !important;
+}
+
+/* ===== LOGIN FORM STYLING ===== */
+.login-card .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.login-card .input-group {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e0e0e0;
+    transition: all 0.2s ease;
+}
+
+.login-card .input-group:focus-within {
+    border-color: #0623b6;
+    box-shadow: 0 0 0 3px rgba(6, 35, 182, 0.08);
+}
+
+.login-card .input-group-text {
+    border: none !important;
+    background-color: #f8f9fa !important;
+}
+
+.login-card .form-control {
+    border: none !important;
+    font-size: 14px;
+}
+
+.login-card .form-control:focus {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+.login-card .form-control::placeholder {
+    color: #b3b3b3;
+}
+
+/* ===== LOGIN BUTTON ===== */
+.btn-login {
+    background: linear-gradient(135deg, #0623b6 0%, #1e39c2 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(6, 35, 182, 0.2);
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background: linear-gradient(135deg, #1e39c2 0%, #0623b6 100%);
+    color: white;
+    box-shadow: 0 6px 16px rgba(6, 35, 182, 0.3);
+    transform: translateY(-2px);
+}
+
+.btn-login:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 8px rgba(6, 35, 182, 0.2);
+}
+
+/* ===== FORM CHECK (Remember Me) ===== */
+.login-card .form-check-input {
+    border-color: #d0d0d0;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.login-card .form-check-input:checked {
+    background-color: #0623b6;
+    border-color: #0623b6;
+}
+
+.login-card .form-check-input:focus {
+    border-color: #0623b6;
+    box-shadow: 0 0 0 3px rgba(6, 35, 182, 0.1);
+}
+
+/* ===== LINKS STYLING ===== */
+.login-card a {
+    color: #0623b6;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.login-card a:hover {
+    color: #1e39c2;
+    text-decoration: underline;
+}
