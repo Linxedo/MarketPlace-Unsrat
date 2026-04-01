@@ -151,3 +151,129 @@ body {
     background-color: #2980b9;
     color: white;
 }
+
+/* ===== LOGIN PAGE ===== */
+.login-card {
+    border-radius: 8px !important;
+    overflow: hidden;
+    background: white;
+}
+
+.avatar-large {
+    width: 70px;
+    height: 70px;
+    background-color: #1e39c2 !important;
+}
+
+.btn-login {
+    background-color: #1e39c2 !important;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #153099 !important;
+    color: white;
+    box-shadow: 0 4px 12px rgba(30, 57, 194, 0.3);
+    transform: translateY(-1px);
+}
+
+.btn-login:active {
+    transform: translateY(0) !important;
+}
+
+.social-btn {
+    font-size: 14px;
+    border-radius: 4px;
+    color: #555;
+    transition: all 0.2s ease;
+    border-color: #ddd;
+}
+
+.social-btn:hover {
+    border-color: #3498db;
+    color: #3498db;
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.form-control:focus,
+.form-control.form-control:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+.input-group-text {
+    border: 1px solid #ddd !important;
+    border-radius: 4px 0 0 4px;
+    color: #1e39c2;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 0 4px 4px 0;
+    font-size: 14px;
+    padding: 10px 12px;
+}
+
+.form-control::placeholder {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.form-label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #2c3e50;
+}
+
+.form-check-input:checked {
+    background-color: #1e39c2 !important;
+    border-color: #1e39c2 !important;
+}
+
+.form-check-input:focus {
+    border-color: #1e39c2;
+    box-shadow: 0 0 0 0.25rem rgba(30, 57, 194, 0.25);
+}
+
+hr {
+    color: #e0e0e0;
+    margin: 1rem 0;
+}
+
+/* Security Info Alert */
+.alert-info {
+    background-color: #e8f4fd !important;
+    border-color: #b3e5fc !important;
+    border-radius: 6px;
+}
+
+.alert-info .text-info {
+    color: #0277bd !important;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50 !important;
+    border-top: 1px solid #34495e;
+}
+
+footer a:hover {
+    color: white !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .login-card {
+        margin: 0 15px;
+    }
+    
+    .form-control,
+    .input-group-text {
+        font-size: 13px;
+    }
+}
